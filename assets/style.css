@@ -1,0 +1,164 @@
+:root {
+    --primary: rgb(151, 37, 37);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#navbar span,
+#navbar a {
+    color: white;
+}
+
+#navbar .nav-link {
+    border-bottom: 2px solid var(--primary);
+    margin: 0 5px;
+}
+
+#navbar .nav-link:hover,
+#navbar .nav-link.active {
+    border-bottom: 2px solid white;
+}
+
+#navbar img {
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+/* Sidebar */
+
+
+/* Home */
+/* Hero */
+.hero {
+
+}
+
+.hero .btn {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: white;
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+.hero img {
+    width: 60vh;
+    border-radius: 100%;
+}
+
+/* Popular */
+.popular .card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.popular .card:hover {
+    transform: scale(1.1);
+}
+
+.popular .card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.popular span {
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: white;
+}
+
+.garis {
+    border: 1px solid var(--primary);
+    width: 150px;
+    margin: 0 auto 30px;
+}
+
+/* Keunggulan */
+.keunggulan img {
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+
+
+
+/* Footer */
+#footer {
+    background-color: var(--primary);
+    color:white;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin: 0 5px;
+}
+
+#footer ul li a:hover{
+    background-color: white;
+    color: var(--primary);
+    margin: 0 5px;
+}
+
+
+
+/* Responsif */
+@media (max-width: 1399px) {
+    .popular .card img {
+        height: 190px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .popular .card img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .keunggulan img {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 576px) {
+    #navbar .nav-link {
+        display: none;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    .popular .card img {
+        height: 220px;
+    }
+}
+
