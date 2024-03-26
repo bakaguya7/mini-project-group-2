@@ -4,8 +4,8 @@
  1. **Rizqi Zamzami Jamil (Leader)**
  2. Ginda Dwi Pamungkas 
  3. Naufal Hanif Imam Fiqri
- 4. Haikhal Yusuf Veren 
- 5. Yeriko Dirgantara
+ 4. Haikhal Yusuf 
+ 5. Veren Yeriko Dirgantara
 
 # Detail UMKM
 | Keterangan     | Detail                        |
