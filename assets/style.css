@@ -97,7 +97,43 @@ body {
     filter: brightness(90%);
 }
 
-
+/* FAQs */
+.garis {
+    border-top: 1px solid #ccc;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .accordion-flush .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-flush .accordion-button {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .accordion-item {
+        overflow: hidden;
+        margin-bottom: 15px; /* Optional: Just for spacing */
+      }
+  
+      .accordion-button {
+        position: relative;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        color: #212529;
+        background-color: #972525;
+        border: 1px solid #972525;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+  
 
 
 /* Footer */
