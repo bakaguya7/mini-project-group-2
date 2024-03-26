@@ -36,14 +36,51 @@ body {
     margin-right: 5px;
 }
 
-/* Sidebar */
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 25px;
+}
 
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar .side-link:hover,
+.sidebar .side-link.active {
+    background-color: white;
+    color: var(--primary);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2rem;
+    margin-left: 50px;
+}
 
 /* Home */
 /* Hero */
-.hero {
-
-}
 
 .hero .btn {
     background-color: var(--primary);
@@ -98,43 +135,33 @@ body {
 }
 
 /* FAQs */
-.garis {
-    border-top: 1px solid #ccc;
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .accordion-flush .accordion-item {
+.accordion-flush .accordion-item {
     margin-bottom: 10px;
-  }
-  
-  .accordion-flush .accordion-button {
-    background-color: #f7f7f7;
-    color: #333;
+}
+
+.accordion-flush .accordion-button {
+    background-color: white;
+    color: black;
     font-weight: bold;
     border-radius: 10px;
-  }
-  
-  
-  
-  .accordion-item {
-        overflow: hidden;
-        margin-bottom: 15px; /* Optional: Just for spacing */
-      }
-  
-      .accordion-button {
-        position: relative;
-        padding: 1rem 1.25rem;
-        font-size: 1rem;
-        color: #212529;
-        background-color: #972525;
-        border: 1px solid #972525;
-        text-align: left;
-        cursor: pointer;
-        border-radius: 15px;
-      }
-  
+}
 
+.accordion-item {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.accordion-button {
+    position: relative;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    text-align: left;
+    cursor: pointer;
+    border-radius: 20px;
+}
 
 /* Footer */
 #footer {
@@ -173,21 +200,25 @@ body {
 }
 
 @media (max-width: 767px) {
+    #navbar .nav-link {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .keunggulan img {
         height: 300px;
         width: 100%;
     }
 }
 
-
 @media (max-width: 991px) {
 
 }
 
 @media (max-width: 576px) {
-    #navbar .nav-link {
-        display: none;
-    }
 
     .hero .btn {
         width: 100%;
