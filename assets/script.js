@@ -5,3 +5,4 @@ function openSidebar() {
 function closeSidebar() {
     document.querySelector('.sidebar').style.width = '0';
 }
+
